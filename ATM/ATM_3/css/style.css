@@ -1,0 +1,58 @@
+.atm-title{
+    color: darkgreen;
+    font-weight: 300;
+    margin-top:50px;
+}
+
+.center-div{
+    text-align: center;
+}
+
+.arrow-100{
+    background-image: url('../images/uparrow100.png');
+}
+
+.acc-no-text{
+    width: 70%;
+    border: 2px solid darkgreen;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.center-content{
+    justify-content: center;
+}
+
+.number-btn{
+    border: 2px solid darkgreen;
+    border-radius: 10px;
+    margin: 5px;
+    min-width: 50px;
+    max-width: 50px;
+    min-height: 50px;
+}
+
+
+.transfer-btn{
+    border: 2px solid darkgreen;
+    background-color: darkgray;
+    color: white;
+    border-radius: 10px;
+    margin: 50px;
+    min-width: 50px;
+    max-width: 50px;
+    min-height: 50px;
+}
+
+
+.action-btn{
+    border: 2px solid darkgreen;
+    border-radius: 0px;
+    margin: 10px;
+    min-width: 250px;
+    max-width: 250px;
+}
+
+.enter-btn{
+    font-size: 12px;
+}

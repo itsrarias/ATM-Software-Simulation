@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>SKKU ATM</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+            <!--Index page -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3"></div>
+                    <div class="col-sm-6 center-div center-content">
+                        <h3 class="atm-title">Transfer?</h3>
+                        <p id="amount_specified">$0.00?</p>
+                        <p id="from">12345</p>
+                        <p id="to">12345</p>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <button class="btn btn-success" onclick="process_trans();">Yes</button>
+                                <button class="btn btn-danger" onclick="back_to_home();">No</button>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                document.getElementById("amount_specified").innerHTML = "$"+sessionStorage.getItem("amnt")+"?";
+                document.getElementById("from").innerHTML = sessionStorage.getItem("fr");
+                document.getElementById("to").innerHTML = sessionStorage.getItem("to");
+            </script>
+    </body>
+</html>

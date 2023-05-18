@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>SKKU ATM</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+            <!--Index page -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h3 class="atm-title">From</h3>
+                        <select id="from_acc"></select>
+                    </div>
+                    <div class="col-sm-6 center-div center-content">
+                        <input type="text" class="form-control acc-no-text" placeholder="$0000.00" value="" name="amnt" id="amnt">
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <button class="btn number-btn" onclick="enter_amnt_number(1);">1</button>
+                                <button class="btn number-btn" onclick="enter_amnt_number(2);">2</button>
+                                <button class="btn number-btn" onclick="enter_amnt_number(3);">3</button>
+                            </div>
+                            <div class="col-sm-12">
+                                <button class="btn number-btn" onclick="enter_amnt_number(4);">4</button>
+                                <button class="btn number-btn" onclick="enter_amnt_number(5);">5</button>
+                                <button class="btn number-btn" onclick="enter_amnt_number(6);">6</button>
+                            </div>
+                            <div class="col-sm-12">
+                                <button class="btn number-btn" onclick="enter_amnt_number(7);">7</button>
+                                <button class="btn number-btn" onclick="enter_amnt_number(8);">8</button>
+                                <button class="btn number-btn" onclick="enter_amnt_number(9);">9</button>
+                            </div>
+                            <div class="col-sm-12">
+                                <button class="btn number-btn" onclick="enter_amnt_number(0);">0</button>
+                                <button class="btn number-btn" onclick="enter_amnt_number('.');">.</button>
+                                <button class="btn number-btn" style="color:red" onclick="remove_digit_amnt();">Del</button>
+                            </div>
+                            <div class="col-sm-12">
+                                <button class="btn number-btn enter-btn" style="width:100%;" onclick="enter_btn_process_amnt('t');">Enter</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12" style="justify-content:right;">
+                                <button class="btn btn-danger">Back</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <h3 class="atm-title">To</h3>
+                        <select id="to_acc"></select>
+                    </div>
+                </div>
+            </div>
+
+
+            <script>
+                var from_acc = document.getElementById("from_acc");
+                var option = document.createElement("option");
+                option.text = account_number[sessionStorage.getItem("acc_index")];
+                from_acc.add(option);
+
+
+                var to_acc = document.getElementById("to_acc");
+
+                for(var i=0;i<account_number.length;i++){
+                    var option = document.createElement("option");
+                    option.text = account_number[i];
+                    if(i != sessionStorage.getItem("acc_index")){ 
+                        to_acc.add(option);
+                    }
+                    
+                }
+            </script>
+    </body>
+</html>

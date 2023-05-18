@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>SKKU ATM</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+            <!--Index page -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3"></div>
+                    <div class="col-sm-5 center-div center-content">
+                        <h1 class="atm-title">SKKU ATM</h1>
+                        <p>Enter your 16 digit account number or insert your card below:</p>
+                        <input type="password" class="form-control acc-no-text" placeholder="Enter Account Number" value="" name="account_number" id="account_number" maxlength="16" size="16">
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <button class="btn number-btn" onclick="enter_acc_number(1);">1</button>
+                                <button class="btn number-btn" onclick="enter_acc_number(2);">2</button>
+                                <button class="btn number-btn" onclick="enter_acc_number(3);">3</button>
+                            </div>
+                            <div class="col-sm-12">
+                                <button class="btn number-btn" onclick="enter_acc_number(4);">4</button>
+                                <button class="btn number-btn" onclick="enter_acc_number(5);">5</button>
+                                <button class="btn number-btn" onclick="enter_acc_number(6);">6</button>
+                            </div>
+                            <div class="col-sm-12">
+                                <button class="btn number-btn" onclick="enter_acc_number(7);">7</button>
+                                <button class="btn number-btn" onclick="enter_acc_number(8);">8</button>
+                                <button class="btn number-btn" onclick="enter_acc_number(9);">9</button>
+                            </div>
+                            <div class="col-sm-12">
+                                <button class="btn number-btn enter-btn" onclick="enter_btn_process_acc_no();">Enter</button>
+                                <button class="btn number-btn" onclick="enter_acc_number(0);">0</button>
+                                <button class="btn number-btn" style="color:red" onclick="remove_digit_acc_no();">Del</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>

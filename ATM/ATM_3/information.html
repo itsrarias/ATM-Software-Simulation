@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>SKKU ATM</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+            <!--Index page -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 center-div center-content">
+                        <h1 class="atm-title">Account Information</h1>
+                        <p id="current_balance">Current Balance : $0,000 </p>
+                        <div class="row">
+                            <div class="col-sm-12 table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <th>Date</th>
+                                        <th>Funds Out</th>
+                                        <th>Funds In</th>
+                                        <th>Running Balance</th>
+                                    </thead>
+                                    <tbody id="tbody">
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                                                <div class="row">
+
+                            <div class="col-sm-12" style="justify-content:right;">
+
+                                <button class="btn btn-danger" onclick="back_to_home();">Back</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                load_info();
+            </script>
+    </body>
+</html>

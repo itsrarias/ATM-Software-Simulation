@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>SKKU ATM</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+            <!--Index page -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3"></div>
+                    <div class="col-sm-5 center-div center-content">
+                        <h1 class="atm-title">WELCOME TO SKKU BANK</h1>
+                        
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <button class="btn action-btn form-control" onclick="display_info();">Account Information</button>
+                            </div>
+                            <div class="col-sm-12">
+                                <button class="btn action-btn form-control" onclick="redirect_withdraw();">Withdraw Funds</button>
+                            </div>
+                            <div class="col-sm-12">
+                                <button class="btn action-btn form-control" onclick="redirect_deposit();">Deposit Funds</button>
+                            </div>
+                            <div class="col-sm-12">
+                                <button class="btn action-btn form-control" onclick="redirect_transfer();">Transfer</button>
+                            </div>
+                            
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-sm-12" style="justify-content:right;">
+                                <button class="btn btn-danger" onclick="redirect_to_index();">Return Card</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>
